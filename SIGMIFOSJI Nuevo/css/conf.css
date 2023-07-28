@@ -1,0 +1,7 @@
+:root {
+    /* Palette */
+    --interface-color: #151719;
+    --darken-text: rgba(230, 230, 230, .9);
+    --horizontal-ruler: rgba(100, 100, 100, .3);
+    --white: #fff;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/regis_usuario.css">
+  <link rel="stylesheet" href="css/lib.css">
+  <link rel="stylesheet" href="css/conf.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Registro de Usuario</title>
+  <script type="text/javascript">
+    function validar(form) {
+
+
+      if (tipoinstru.selectedIndex == false) {
+        alert("Debe colocar un tipo de usuario.");
+        form.tipoinstru.focus();
+        return false;
+      }
+
+      var usuario = form.usuario.value;
+      if (!usuario) {
+        alert("Debe colocar un Usuario");
+        form.clas.focus();
+        return false;
+      }
+
+      var clas = form.clas.value;
+      if (!clas) {
+        alert("Debe colocar una Contrasena");
+        form.clas.focus();
+        return false;
+      }
+    }
+  </script>
+</head>
+
+<!--aqui ira lo mencionado debajo aunque se superpone por encima del menu, no se como acomodarlo-->
+        <header class="header"><span style="font-size: 20px;">Fundación Orquesta Sinfónica Juvenil Independencia</span></header>
+        <div class="main-container">
+            <aside class="sidebar">
+                <ul class="menu">
+                    <li>
+                  <!--imgusu = imagen del usuario que ingresara ya sea coordinador o lo que sea-->
+                        <img src="images/img001.jpg" alt="imgusu" class="imgusu">
+                        <li class="perfil"><a href="Perfil Usuario.html" style="font-size:20px;">Perfil de Usuario</a></li>
+                    </li>
+                    <!--aqui quiero poner un acordeon-->
+                    <li class="lista1" style="cursor:pointer;">
+                        <details >
+                            <summary>Catedras</summary>
+                            <ul>
+                                <li class="sublista1_1"><a href="Tabla de Catedras.html">Estudiantes</a></li>
+                                    <li class="sublista1_2"><a href="Tabla de profesores.html">Profesores</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista2" style="cursor:pointer;">
+                        <details>
+                            <summary>Registros</summary>
+                            <ul>
+                                <li class="sublista2_1"><a href="registro de persona.html">Registro de Persona</a></li>
+                                <li class="sublista2_2"><a href="Registro de Usuario.html">Registro de Usuario</a></li>
+                                <li class="sublista2_4"><a href="registro de instrumentos.html">Registro de Instrumentos</a></li>
+                                <li class="sublista2_5"><a href="clasific.html">Tipo de Intrumentos</a></li>
+                                <li class="sublista2_6"><a href="registromarc.html">Marca de Intrumentos</a></li>
+                                <li class="sublista2_7"><a href="modificacion de usuario.html">Modificacion de Usuario</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista3" style="cursor:pointer;">
+                        <details>
+                            <summary>Asignacion</summary>
+                            <ul>
+                                <li class="sublista3_1"><a href="representante.html">Asignacion de Representantes</a></li>
+                                <li class="sublista3_2"><a href="asignaprofe.html">Asignacion de Profesores</a></li>
+                                <li class="sublista3_3"><a href="asignarinst.html">Asignacion de Intrumentos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista4" style="cursor:pointer;">
+                        <details>
+                            <summary>Inventario</summary>
+                            <ul>
+                                <li class="sublista4_1"><a href="Tabla de inventario.html">Intrumentos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="cierresesion" style="cursor:pointer;"><a href="index.html" style="font-size:20px;">Cerrar Sesion</a></li>            
+                </ul>
+            </aside>
+            <main class="content">
+
+  <!--CONTENIDO DE REGISTRO DE USUARIO_____________________________________________________-->
+
+  <div class="container" style="box-shadow:0px 0px 10px;">
+    <form action="#" name="form" onsubmit=" return validar(this)" method="post">
+
+      <div class="row">
+        <div class="col-25">
+          <label>Cedula:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="clas" placeholder="Ingrese su Cedula">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="row">
+          <div class="col-25">
+            <label>Nombre:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="nombre" placeholder="Felix">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label>Apellido:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="apellido" placeholder="Lee">
+          </div>
+        </div>
+
+        <div class="col-25">
+          <label>Tipo de Usuario:</label>
+        </div>
+        <div class="col-75">
+          <select class="select" id="tipoinstru" name="tipoinstru">
+            <option disabled selected></option>
+            <option value="1">Director</option>
+            <option value="2">Coordinadora</option>
+            <option value="3">Secretaria</option>
+            <option value="4">Administrador de instrumento</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label>Usuario:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="usuario" placeholder="Ingrese su usuario">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25">
+            <label>Contraseña:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="clas" placeholder="Ingrese su contraseña">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-75">
+            <input type="text" name="clas" placeholder="Confirmar contraseña">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <input type="reset" name="limp" value="Limpiar" style="margin-top:4vh;">
+        </div>
+
+        <div class="row">
+          <input type="submit" name="rpersona" value="Registrar" style="margin-top:-5.5vh;">
+        </div>
+        </form>
+      </div>
+    </main>
+</body>

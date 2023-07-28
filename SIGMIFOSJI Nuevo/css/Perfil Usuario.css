@@ -1,0 +1,170 @@
+/*__________________________________________________*/
+body {
+    color: #419dee;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 70px 0px 10px;
+    position: relative;
+}
+
+.gray-bg {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+    background-color: rgb(247, 247, 247);
+}
+
+img {
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.section{
+    margin-top:45vh;
+    margin-left:30vh;
+    width:60%;
+}
+
+/* About Me 
+---------------------*/
+
+.col-lg-5 {
+    margin-top: -48vh;
+    margin-left: 55vh;
+}
+
+table {
+    border-color: rgb(255, 253, 253);
+    margin-top: 5vh;
+    margin-left: -50vh;
+}
+
+th,
+tr,
+td {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+}
+
+th {
+    color: #f39325;
+}
+
+td {
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    color: black;
+}
+
+.about-text h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: -250px 10vh 5vh;
+}
+
+@media (max-width: 767px) {
+    .about-text h3 {
+        font-size: 35px;
+    }
+}
+
+.about-text h6 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .about-text h6 {
+        font-size: 18px;
+    }
+}
+
+.about-text p mark {
+    font-weight: 600;
+    color: #f39325;
+}
+
+.about-list {
+    padding-top: 10px;
+}
+
+.about-list .media {
+    padding: 5px 0;
+}
+
+.about-list label {
+    color: #f39325;
+    font-weight: 600;
+    width: 88px;
+    margin: 0;
+    position: relative;
+}
+
+.about-list label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 11px;
+    width: 1px;
+    height: 12px;
+    background: #f39325;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    margin: auto;
+    opacity: 0.5;
+}
+
+.about-list p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.about-section .counter {
+    padding: 22px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+
+.about-section .counter .count-data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section .counter .count {
+    font-weight: 700;
+    color: #20247b;
+    margin: 0 0 5px;
+}
+
+.about-section .counter p {
+    font-weight: 600;
+    margin: 0;
+}
+
+mark {
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+
+.dark-color {
+    color: #f39325;
+}

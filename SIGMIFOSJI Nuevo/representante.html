@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/conf.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modificacion de usuario.css">
+	<title></title>
+</head>
+
+<script type="text/javascript">
+
+    function validar(form) {
+
+
+      var ci = form.cedula.value;
+      if (!ci) {
+        alert("Su Cedula es Obligatoria.");
+        form.cedula.focus();
+        return false;
+      }
+
+      var nombreestu = form.nombreestu.value;
+      if (!nombreestu) {
+        alert("El nombre del Estudiante es Obligatorio.");
+        form.nombreestu.focus();
+        return false;
+      }
+
+
+      var represen = form.represen.value;
+      if (!represen) {
+        alert("Coloque el Nombre del Representante.");
+        form.represen.focus();
+        return false;
+      }
+
+    }
+  </script>
+<body>
+
+<!--aqui ira lo mencionado debajo aunque se superpone por encima del menu, no se como acomodarlo-->
+        <header class="header"><span style="font-size: 20px;">Fundación Orquesta Sinfónica Juvenil Independencia</span></header>
+        <div class="main-container">
+            <aside class="sidebar">
+                <ul class="menu">
+                    <li>
+                  <!--imgusu = imagen del usuario que ingresara ya sea coordinador o lo que sea-->
+                        <img src="images/blacklogo.png" alt="imgusu" class="imgusu">
+                        <li class="perfil"><a href="Perfil Usuario.html" style="font-size:20px;">Perfil de Usuario</a></li>
+                    </li>
+                    <!--aqui quiero poner un acordeon-->
+                    <li class="lista1" style="cursor:pointer;">
+                        <details >
+                            <summary>Catedras</summary>
+                            <ul>
+                                <li class="sublista1_1"><a href="Tabla de Catedras.html">Estudiantes</a></li>
+                                    <li class="sublista1_2"><a href="Tabla de profesores.html">Profesores</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista2" style="cursor:pointer;">
+                        <details>
+                            <summary>Registros</summary>
+                            <ul>
+                                <li class="sublista2_1"><a href="registro de persona.html">Registro de Persona</a></li>
+                                <li class="sublista2_2"><a href="Registro de Usuario.html">Registro de Usuario</a></li>
+                                <li class="sublista2_4"><a href="registro de instrumentos.html">Registro de Instrumentos</a></li>
+                                <li class="sublista2_5"><a href="clasific.html">Tipo de Intrumentos</a></li>
+                                <li class="sublista2_6"><a href="registromarc.html">Marca de Intrumentos</a></li>
+                                <li class="sublista2_7"><a href="modificacion de usuario.html">Modificacion de Usuario</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista3" style="cursor:pointer;">
+                        <details>
+                            <summary>Asignacion</summary>
+                            <ul>
+                                <li class="sublista3_1"><a href="representante.html">Asignacion de Representantes</a></li>
+                                <li class="sublista3_2"><a href="asignaprofe.html">Asignacion de Profesores</a></li>
+                                <li class="sublista3_3"><a href="asignarinst.html">Asignacion de Intrumentos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista4" style="cursor:pointer;">
+                        <details>
+                            <summary>Inventario</summary>
+                            <ul>
+                                <li class="sublista4_1"><a href="Tabla de inventario.html">Intrumentos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="cierresesion" style="cursor:pointer;"><a href="index.html" style="font-size:20px;">Cerrar Sesion</a></li>            
+                </ul>
+            </aside>
+            <main class="content">
+
+            	<h1 style="margin-top:10vh; text-align: center;">Asignacion de Representantes</h1>
+
+            	<div class="container" style="box-shadow: 0px 0px 10px; margin-top:10vh;">
+    <form action="#" name="form" onsubmit="return validar(this)" method="post">
+
+      <div class="row">
+        <div class="row">
+          <div class="col-25">
+            <label>Cedula Del Estudiante:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="cedula" id="cedula" placeholder="Coloque su Cedula">
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label>Nombre Del Estudiante:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" name="nombreestu" placeholder="Lee Minho">
+            </div>
+          </div>
+  
+          <div class="col-25">
+            <label>Nombre del Representante:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="represen" id="represen" placeholder="Coloque el Nombre del Representante">
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Modifcar">
+        </div>
+
+      </div>
+      <div class="row">
+        <input type="reset" name="limp" value="Limpiar">
+      </div>
+  </div>
+  </form>
+  </div>
+</main>
+  </div>
+
+        </main>
+        </div>
+
+</body>
+</html>

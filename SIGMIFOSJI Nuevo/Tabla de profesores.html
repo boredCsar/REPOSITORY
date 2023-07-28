@@ -1,0 +1,194 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inventario.css">
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/conf.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Tabla de Catedras</title>
+</head>
+
+<body>
+
+    <!--aqui ira lo mencionado debajo aunque se superpone por encima del menu, no se como acomodarlo-->
+        <header class="header"><span style="font-size: 20px;">Fundación Orquesta Sinfónica Juvenil Independencia</span></header>
+        <div class="main-container">
+            <aside class="sidebar">
+                <ul class="menu">
+                    <li>
+                  <!--imgusu = imagen del usuario que ingresara ya sea coordinador o lo que sea-->
+                        <img src="images/img001.jpg" alt="imgusu" class="imgusu">
+                        <li class="perfil"><a href="Perfil Usuario.html" style="font-size:20px;">Perfil de Usuario</a></li>
+                    </li>
+                    <!--aqui quiero poner un acordeon-->
+                    <li class="lista1" style="cursor:pointer;">
+                        <details >
+                            <summary>Catedras</summary>
+                            <ul>
+                                <li class="sublista1_1"><a href="Tabla de Catedras.html">Estudiantes</a></li>
+                                    <li class="sublista1_2"><a href="Tabla de profesores.html">Profesores</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista2" style="cursor:pointer;">
+                        <details>
+                            <summary>Registros</summary>
+                            <ul>
+                                <li class="sublista2_1"><a href="registro de persona.html">Registro de Persona</a></li>
+                                <li class="sublista2_2"><a href="Registro de Usuario.html">Registro de Usuario</a></li>
+                                <li class="sublista2_4"><a href="registro de instrumentos.html">Registro de Instrumentos</a></li>
+                                <li class="sublista2_5"><a href="clasific.html">Tipo de Intrumentos</a></li>
+                                <li class="sublista2_6"><a href="registromarc.html">Marca de Intrumentos</a></li>
+                                <li class="sublista2_7"><a href="modificacion de usuario.html">Modificacion de Usuario</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista3" style="cursor:pointer;">
+                        <details>
+                            <summary>Asignacion</summary>
+                            <ul>
+                                <li class="sublista3_1"><a href="#">Asignacion de Representantes</a></li>
+                                <li class="sublista3_2"><a href="">Asignacion de Profesores</a></li>
+                                <li class="sublista3_3"><a href="asignarinst.html">Asignacion de Intrumentos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="lista4" style="cursor:pointer;">
+                        <details>
+                            <summary>Inventario</summary>
+                            <ul>
+                                <li class="sublista4_1"><a href="Tabla de inventario.html">Intrumentos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="cierresesion" style="cursor:pointer;"><a href="index.html" style="font-size:20px;">Cerrar Sesion</a></li>            
+                </ul>
+            </aside>
+<main class="content">
+    <div class="container">
+
+        <input class="form-control" id="myInput" type="text"
+            placeholder="Buscar Datos (Cedula, Nombre Completo, Edad, Correo, Telefono, Instrumento, Catedras)">
+        <button class="botonlink" style="margin-left:120vh;"><a href="registro de persona.html" style="text-decoration: none; color:white;">Asignar Profesor</a></button>
+            <table class="table table-bordered table-striped" id="tabla" style="margin-left:15vh;">
+            <thead>
+                <tr>
+                    <th>Cedula</th>
+                    <th>Nombre Completo</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Instrumento que Imparte</th>
+                    <th>Catedra</th>
+                    <th style="font-size:12px; font-weight: 800;">Opciones</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>31888234</td>
+                    <td>Profesor</td>
+                    <td>micorreo.com</td>
+                    <td>1234478</td>
+                    <td>Flauta</td>
+                    <td>Viento</td>
+                    
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30788234</td>
+                    <td>Profesor</td>
+                    <td>micorreo@gmail.com</td>
+                    <td>1234478</td>
+                    <td>Flauta</td>
+                    <td>Viento</td>
+                    
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30888534</td>
+                    <td>Profesor</td>
+                    <td>micorreo.com</td>
+                    <td>1234478</td>
+                    <td>Flauta</td>
+                    <td>Percusion</td>
+                   
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30988234</td>
+                    <td>Profesor</td>
+                    <td>micorreo.com</td>
+                    <td>1234478</td>
+                    <td>Flauta</td>
+                    <td>Coro Juvenil</td>
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30888234</span></td>
+                    <td>Profesor</td>
+                    <td>micorreo.com</span></td>
+                    <td>1234478</span></td>
+                    <td>Flauta</span></td>
+                    <td>Coro Infantil</td>
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30888234</td>
+                    <td>Profesor</td>
+                    <td>micorreo@gmail.com</td>
+                    <td>1234478</td>
+                    <td>Flauta</td>
+                    <td>Viento</td>
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30888234</td>
+                    <td>Profesor</td>
+                    <td>micorreo@gmail.com</td>
+                    <td>1234478</td>
+                    <td>Piano</td>
+                    <td>Cuerda</td>
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                <tr>
+                    <td>30888234</td>
+                    <td>Profesor</td>
+                    <td>micorreo@gmail.com</td>
+                    <td>1234478</td>
+                    <td>Guitarra</td>
+                    <td>Cuerda</td>
+                    <td><img src="Assets/icons/edit.png" width="25px" alt=""> <img src="Assets/icons/delete icon.png"
+                            width="25px" alt=""></td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</div>
+
+</body>
+
+</html>

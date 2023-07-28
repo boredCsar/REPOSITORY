@@ -1,0 +1,93 @@
+/*tabla*/
+
+#myInput {
+  width: 95vh;
+  margin-bottom: 3vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 5px 0px;
+  font-size:18px;
+}
+
+.container {
+  width: 50vw;
+  margin-left: 10vh;
+  margin-top: 20vh;
+}
+
+.botonlink{
+  margin-top:-8vh;
+  width:200px;
+  padding:5px;
+  font-size:20px;
+  background-color: rgb(225, 147, 3);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Colapsa todos los bordes que separan a cada celda. La tabla ocupa todo el ancho de ".app", además se establece una sobra gris alrededor de la tabla */
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 7px gray;
+}
+
+/* Establece una sombra en la cabeza de la tabla */
+thead {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  background-color: white;
+}
+
+/* Agrega algo de espacio al rededor del encabezado de la tabla. Alinea el texto a la dereche y lo convierte a mayúsculas */
+
+th {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+
+/* Agrega un padding en cada celda */
+td {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(83, 83, 83);
+  text-align: center;
+}
+
+/* Crea una alternancia de colores a lo largo de las filas de la tabla. Establece en color azul todas las filas pares (2, 4, 6 ...) */
+
+tr:nth-child(even) {
+  background-color: #ffe5c7;
+}
+
+@media screen and (max-width:700px) {
+
+  .container {
+    width: 20%;
+    padding: 0px;
+    font-size: 10px;
+    margin-left: 30vh;
+  }
+
+  #myInput {
+    width:100%;
+    margin-left: 0vh;
+    margin-top: 25vh;
+    font-size: 10px;
+  }
+
+  th {
+    font-size: 8px;
+    padding: 0.5rem 0.5rem;
+  }
+
+  td {
+    font-size: 10px;
+    padding: 0.5rem 0.5rem;
+  }
+}

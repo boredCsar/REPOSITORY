@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    font-family: "lato", sans-seriff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  /*Menu_________________________________________________________*/
+
+  
+  .barra {
+    position: fixed;
+    margin-top:-2vh;
+    width: 250px;
+    height: 100%;
+    left: 0px;
+    background: #1b1b1b;
+    transition: left 0.4s ease;
+  
+  }
+  
+  .barra.show {
+    left: 0px;
+  }
+  
+  .texto a {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    background: #1b1b1b;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+  }
+  
+  nav ul li {
+    line-height: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+  }
+  
+  nav ul li.active a {
+    color: rgb(255, 200, 0);
+    background: #1e1e1e;
+    border-left-color: rgb(255, 200, 0);
+  
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255, 200, 0, 0.305);
+  }
+  
+  nav ul ul {
+    position: static;
+    display: none;
+  }
+  
+  nav ul .catedra-show.show {
+    display: block;
+  }
+  
+  nav ul .regs-show.show1 {
+    display: block;
+  }
+  
+  nav ul .inv-show.show2 {
+    display: block;
+  }
+  
+  nav ul ul li {
+    line-height: 42px;
+    border-top: none;
+  }
+  
+  nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 20px;
+  
+  }
+  
+  nav ul li.active ul li a {
+    color: #e6e6e6;
+    background: #1b1b1b;
+    border-left-color: transparent;
+  }
+  
+  nav ul ul li a:hover {
+    color: rgb(255, 200, 0) !important;
+    background: rgba(255, 200, 0, 0.135) !important;
+  }
+  
+  nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+  }
+  
+  nav ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+  
+  nav ul li .cierresesion {
+    background: #1e1e1e;
+    margin-top: 5vh;
+    color: orange;
+    box-shadow: -0.5px 0px 6px;
+  }
+  
+  nav ul li .cierresesion:hover {
+    background: rgba(155, 155, 155, 0.472);
+  
+  }
+  
+  .heading {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+  }
+
+  /*_____________________________________________________________*/
+
+  .chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    margin-top:-4vh;
+    margin-bottom:5vh;
+  
+  }
+  
+  .chip a {
+    text-decoration: none;
+    background-color: #f1f1f1;
+    font-size:15px;
+    color: black;
+  }
+  
+  .chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  
+  /*tabla*/
+  
+  #myInput {
+    width: 112vh;
+    margin-bottom: 3vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px 5px 0px;
+    font-size:20px;
+  }
+  
+  .container {
+    width: 50vw;
+    margin-left: 3vh;
+    margin-top: -8vh;
+  }
+
+  .botonlink{
+    margin-top:-8vh;
+    margin-left:140vh;
+    width:200px;
+    padding:5px;
+    font-size:20px;
+    background-color: rgb(225, 147, 3);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  /* Colapsa todos los bordes que separan a cada celda. La tabla ocupa todo el ancho de ".app", además se establece una sobra gris alrededor de la tabla */
+  table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 7px gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  /* Establece una sombra en la cabeza de la tabla */
+  thead {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  /* Agrega algo de espacio al rededor del encabezado de la tabla. Alinea el texto a la dereche y lo convierte a mayúsculas */
+  
+  th {
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+  
+  }
+  
+  /* Agrega un padding en cada celda */
+  td {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    text-align: center;
+  }
+  
+  /* Crea una alternancia de colores a lo largo de las filas de la tabla. Establece en color azul todas las filas pares (2, 4, 6 ...) */
+  
+  tr:nth-child(even) {
+    background-color: #ffe5c7;
+  }
+  
+  @media screen and (max-width:700px) {
+  
+    .container {
+      width: 20%;
+      padding: 0px;
+      font-size: 10px;
+      margin-left: 30vh;
+    }
+  
+    #myInput {
+      width:70vh;
+      margin-left: 0vh;
+      margin-top: 25vh;
+      font-size: 10px;
+    }
+  
+    th {
+      font-size: 8px;
+      padding: 0.5rem 0.5rem;
+    }
+  
+    td {
+      font-size: 10px;
+      padding: 0.3rem 0.3rem;
+    }
+  
+    .barra {
+      margin-top: -3vh;
+      width: 100px;
+      left: 0px;
+    }
+
+    .barra.show {
+        left: -100px;
+      }
+  
+    .boton {
+      position:fixed;
+      top: 15px;
+      margin-left:100px;
+      height: 27px;
+      width: 27px;
+      text-align: center;
+      background: #1b1b1b;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: left 0.4s ease;
+    }
+  
+    .boton.click {
+      left: 160px;
+    }
+  
+    .boton span {
+      color: white;
+      font-size: 15px;
+      line-height: 45px;
+      margin-top: -8px;
+    }
+  
+    .texto a {
+      font-size: 15px;
+      line-height: 65px;
+    }
+  
+    nav ul {
+      height: 100%;
+      width: 100%;
+    }
+  
+    nav ul li a {
+      font-size: 10px;
+      padding-left: 15px;
+      width: 100%;
+    }
+  
+    nav ul li a span {
+      font-size: 15px;
+      left: 70px;
+    }
+  
+    nav ul ul li a {
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  
+    .regs-show li a {
+      font-size: 7px;
+    }
+  
+  }

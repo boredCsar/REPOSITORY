@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/2inicio de sesion.css">
+    <script type="text/javascript">
+
+        function validar(form) {
+
+            var usuario = form.usuario.value;
+            if (!usuario) {
+                alert("Campo de Usuario Obligatorio");
+                form.usuario.focus();
+                return false;
+            }
+
+            var contraseña = form.contraseña.value;
+            if (!contraseña) {
+                alert("Campo de Contraseña Obligatorio");
+                form.contraseña.focus();
+                return false;
+            }
+        }
+    </script>
+    <title>Inicio de Sesión</title>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+
+        <a href="1paginaprin.html">Inicio</a>
+
+        <img src="Assets/images/logo del inicio.png" class="logo">
+
+    </div>
+
+
+    <div class="container-login">
+
+
+        <div class="wrap-login">
+
+            <form action="menu.html" method="POST" class="form" id="form" name="form" onsubmit="return validar(this)">
+
+                <section>
+                    <h3 align="center">Iniciar Sesión</h3>
+
+                    <input type="text" name="usuario" class="inicio" id="usuario" value="" maxlength="16" size="20"
+                        placeholder="Ingrese su Usuario">
+
+                    <input type="password" name="clave" class="inicio" id="contraseña" maxlength="16" size="20"
+                        placeholder="Ingrese su Contraseña">
+                </section>
+
+                <a href="menu.html"><input type="submit" id="botonsubmit" value="Iniciar" class="ingreso"></input></a>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="Assets/Js/javascript.js"></script>
+
+
+</body>
+
+</html>

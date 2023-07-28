@@ -1,0 +1,104 @@
+/*_____________________________________________________________________________________________*/
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit] {
+  margin-top: 2vh;
+  background-color: rgb(201, 104, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container {
+  float: center;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 19vh;
+  margin-left: 26vh;
+  width: 70%;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-99 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-999 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+
+.col-35 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=reset] {
+  margin-top:-4vh;
+  background-color: rgb(201, 104, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  input[type=radio],
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

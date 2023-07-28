@@ -1,0 +1,121 @@
+/*Registro_______________________________________________________________________________*/
+
+/* Diseño de los inputs, los select y los textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Diseño del label */
+  
+  label {
+    padding: 12px 12px 12px 0px;
+    
+  }
+  
+  /* Diseño del boton Submit */
+  input[type=submit] {
+    margin-top:2vh;
+    background-color: rgb(201, 104, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Diseño del Contenedor */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow:0px 0px 10px;
+    padding: 20px;
+    width:80%;
+    margin-top:15vh;
+    margin-left:25vh;
+  }
+  
+  /* Diseño de los titulos */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 20px;
+  }
+  
+  /* Diseños de los insputs */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Para el posicionamiento de elementos y columnas */
+  .row:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+   .selectsty{
+    width: auto;
+    border-radius:5px;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(201, 104, 0);
+    padding:15px;
+    display: flex;
+    margin-top:5px;
+  }
+
+  #id_input{
+    margin-left:10px;
+  }
+
+   #modeloinstrum{
+    width:80.5vh;
+    margin-left:10px;
+  }
+
+  .radioasign {
+    width: auto;
+    border-radius:5px;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    background-color:rgb(201, 104, 0);
+    padding:15px;
+    display: flex;
+    margin-top:5px;
+  }
+
+  input[type=reset] {
+    margin-top:-4vh;
+    background-color: rgb(201, 104, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+  /* Letra*/
+
+  .heading {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+  }
+  
+  
+  @media screen and (min-width: 40em) {
+    body {
+      width: 90%;
+    }
+
+  }
+  
+
+  
